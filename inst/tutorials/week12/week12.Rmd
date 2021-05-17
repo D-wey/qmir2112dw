@@ -99,7 +99,7 @@ Let's take a look at our data `df_learnr12`. In the first step, we want you to r
 ```
 
 ```{r q5, echo = FALSE}
-question_text("What is the coefficient of `length_world`.",
+question_text("What is the coefficient for the duration of World Bank membership (`length_world`). Round the coefficient to two digits after the decimal.",
   answer("-0.04", correct = T),
   allow_retry = TRUE,
   incorrect = "Hint: Have you rounded correctly?"
@@ -122,7 +122,7 @@ question_text(" What is the unit-specific intercept for Albania? Round the coeff
 ```
 
 ```{r q7, echo = FALSE}
-question_text("What is the coefficient for the duration of World Bank membership? Round the coefficient to two digits after the decimal.",
+question_text("What is the coefficient for the duration of World Bank membership  (`length_world`)? Round the coefficient to two digits after the decimal.",
   answer("0.03", correct = T),
   allow_retry = TRUE,
   incorrect = "Hint: is the fixed-effect correctly specified?"
@@ -133,8 +133,8 @@ question_text("What is the coefficient for the duration of World Bank membership
 
 ```{r q8, echo = FALSE}
 question_text("If you wanted to present your results in a table using `screenreg()`, but wanted to exclude the country FE's from the table, what argument would you use?",
-  answer("omit.coef()", correct = T),
-  answer("omit.coef(country_name)", correct = T),
+  answer("omit.coef", correct = T),
+  answer("omit.coef = country_name", correct = T),
   allow_retry = TRUE,
   incorrect = "Hint: Take a look at the arguments of the screenreg()-function."
 )
