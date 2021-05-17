@@ -15,7 +15,7 @@ library(texreg)
 gradethis:: gradethis_setup()
 
 library(tidyverse)
-data(df_learnr12)
+#data(df_learnr12)
 ```
 
 
