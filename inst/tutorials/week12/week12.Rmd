@@ -16,7 +16,6 @@ gradethis:: gradethis_setup()
 
 library(tidyverse)
 data(df_learnr12)
-load("df_learnr12.rda")
 ```
 
 
